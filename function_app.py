@@ -3,7 +3,7 @@ import azure.functions as func
 import logging
 from fastapi_endpoints import app as fastapi_app
 
-app = func.AsgiFunctionApp(app=fastapi_app, http_auth_level=func.AuthLevel.FUNCTION)
+app = func.AsgiFunctionApp(app=fastapi_app, http_auth_level=func.AuthLevel.ANONYMOUS)
 # app = func.FunctionApp(http_auth_level=func.AuthLevel.FUNCTION)
 
 # @app.route(route="http_trigger")
