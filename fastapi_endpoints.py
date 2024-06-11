@@ -5,7 +5,7 @@ app = FastAPI()
 
 @app.get("/")
 def root():
-    return {"message": "reporting is up and running as of Tuesday 2024-06-11"}
+    return {"message": "reporting is up and running V3"}
 
 
 @app.get("/delinquency/{name}")
